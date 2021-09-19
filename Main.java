@@ -28,7 +28,7 @@ public final class XDDCraftDiscordPlugin extends JavaPlugin {
   public void onEnable() {
     saveDefaultConfig();
 
-    String botToken = getConfig().getString( path: "bot-token" )
+    String botToken = getConfig().getString( path: "bot-token" );
   try {
     jda = JDABuilder.createDefault(botToken)
     .build()
