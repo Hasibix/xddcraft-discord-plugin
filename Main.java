@@ -18,7 +18,7 @@ import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
-public final class XDDCraftDiscordPlugin extends JavaPlugin {
+public final class net.hasibix.xddcraft.discord extends JavaPlugin {
   private net.dv8tion.jda.api.JDA jda;
   private TextChannel chatChannel;
   
