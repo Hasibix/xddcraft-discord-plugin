@@ -18,7 +18,7 @@ import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
-public final class net.hasibix.xddcraft.discord extends JavaPlugin {
+public final class xddcraftdiscord extends JavaPlugin {
   private net.dv8tion.jda.api.JDA jda;
   private TextChannel chatChannel;
   
@@ -57,11 +57,13 @@ public final class net.hasibix.xddcraft.discord extends JavaPlugin {
 
       jda.addEventListener(new DiscordListener());
       getServer().getPluginManager().registerEvents( new SpigotListener(), plugin: this );
+    chatChannel.sendMessage("**Server has been started!** ✅ ||@everyone||")
   }
 
   @Override
   public void onDisable() {
      if(jda != null) jda.shutdownNow();
+    chatChannel.sendMessage("**Server has been stopped** 🛑")
   }
 
 

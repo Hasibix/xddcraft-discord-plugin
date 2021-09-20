@@ -1,0 +1,5 @@
+name: XDDCraft-Discord-Plugin
+description: This is xddcrafts discord linking with minecraft plugin!
+author: Hasibix
+main: net.hasibix.xddcraftdiscord
+version: 1.0
